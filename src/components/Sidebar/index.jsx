@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+import Logo from "../../assets/images/logo.png";
 import {
   DesktopOutlined,
   FileOutlined,
@@ -7,7 +10,10 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
+import Topbar from '../Topbar';
+
+const { Header, Content, Sider } = Layout;
+
 function getItem(label, key, icon, children) {
   return {
     key,
@@ -16,6 +22,7 @@ function getItem(label, key, icon, children) {
     label,
   };
 }
+
 const items = [
   getItem('Option 1', '1', <PieChartOutlined />),
   getItem('Option 2', '2', <DesktopOutlined />),
@@ -41,16 +48,17 @@ const SidebarLayout = () => {
       }}
     >
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-        <div className="demo-logo-vertical" />
+      <Link to={'/'}>
+      <img
+        className="tezzaLogo"
+        src={Logo}
+        alt="tezzaLogo"
+      />
+      </Link>
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} />
       </Sider>
       <Layout>
-        <Header
-          style={{
-            padding: 0,
-            background: colorBgContainer,
-          }}
-        />
+        <Topbar />
         <Content
           style={{
             margin: '0 16px',
@@ -74,13 +82,6 @@ const SidebarLayout = () => {
             Bill is a cat.
           </div>
         </Content>
-        <Footer
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          Ant Design ©2023 Created by Ant UED
-        </Footer>
       </Layout>
     </Layout>
   );
