@@ -124,7 +124,7 @@ ul {
 }
 
 .ant-layout-sider-children .tezzaLogo {
-  width: 90px ;
+  width: 90px;
   margin: 40px 40px 10px 40px;
   cursor: "pointer";
 }
@@ -219,7 +219,7 @@ ul {
 .h1_welcome {
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Inter';
+  font-family: "Inter";
   color: #000000;
 }
 
@@ -227,7 +227,7 @@ ul {
   color: #808080;
   font-size: 16px;
   font-weight: normal;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .client_content .p-over {
@@ -238,14 +238,14 @@ ul {
 }
 
 .card_compartment {
-display: flex;
+  display: flex;
 }
 
 .client_card {
   box-shadow: 0 4px 8px 0 #00000033;
   transition: 0.3s;
   width: 40%;
-  height: 150px;
+  height: 130px;
   /* padding: 10; */
   background: #fff;
 }
@@ -257,15 +257,50 @@ display: flex;
 }
 
 .span.B {
-  background-color: #FBF6EB;
+  background-color: #fbf6eb;
   /* width: 40%; */
   height: 40px;
 }
 
+.span.B .p-today {
+  font-weight: 700;
+  font-family: "Inter";
+  color: #000000;
+}
+
+.span.B p {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Inter";
+  color: #989898;
+}
+
+.add {
+  color: #ddaa33 !important;
+}
+
 .client_card.B {
   margin-left: 100px;
-  height: 130px;
+  height: 150px;
   width: 35%;
+}
+
+.client_card.C {
+  width: 40%;
+  height: 220px;
+}
+
+.span.B span {
+  font-weight: 500;
+  font-family: "Inter";
+  color: #000000;
+}
+
+.span.B .p-due {
+  text-align: left;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000
 }
 
 /*  */
