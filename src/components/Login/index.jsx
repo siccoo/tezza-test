@@ -9,7 +9,7 @@ const Login = () => {
             <div className="switch">
               <div className="item">
                 <h6>Login</h6>
-                <p>Login to you account</p>
+                <p className="p-login">Login to you account</p>
               </div>
               <div className="item ">
                 <img src={Logo} alt="tezza" className="tezzaImg" />
@@ -30,9 +30,11 @@ const Login = () => {
                 id="password"
                 placeholder="Enter your password"
               />
-
+              <span></span>
               <div>
-                <button type="submit">Login</button>
+                <a href="/clients" className="button">
+                  Login
+                </a>
               </div>
             </form>
           </div>

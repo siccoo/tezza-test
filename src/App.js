@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-// import 'antd/dist/antd.min.css';
-// import Login from "./components/Login";
-import SidebarLayout from "./components/Sidebar";
+import Clients from "./pages/Clients";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<SidebarLayout />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/clients" element={<Clients />} />
       </Routes>
     </div>
   );
