@@ -32,7 +32,7 @@ const Login = () => {
               />
               <span></span>
               <div>
-                <a href="/clients" className="button">
+                <a href="/workspace" className="button">
                   Login
                 </a>
               </div>

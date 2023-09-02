@@ -44,7 +44,7 @@ const Workspace = () => {
                   </div>
                   <p>
                     You don't have any schedule today.{" "}
-                    <a href="#" className="add">
+                    <a href="/clients" className="add">
                       Add
                     </a>
                   </p>
@@ -63,7 +63,8 @@ const Workspace = () => {
                     }}
                   >
                     <p className="p-today">Activity Report</p>
-                    <span
+                    <a
+                    href="/clients"
                       style={{
                         alignItems: "center",
                         marginBottom: 5,
@@ -73,14 +74,13 @@ const Workspace = () => {
                       }}
                     >
                       View full activity report &rarr;{" "}
-                    </span>
-                  </div>
-                  <p>
-                    You don't have any schedule today.{" "}
-                    <a href="#" className="add">
-                      Add
                     </a>
-                  </p>
+                  </div>
+                  <div className="workspace" style={{display: "flex", }}>
+                  
+                  <p><hr /> {" "} Tuesday (18th Sept 2019</p>
+                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ const Workspace = () => {
                     }}
                   >
                     <p className="p-today">Task that are due</p>
-                    <span
+                    <a
                       style={{
                         alignItems: "center",
                         marginBottom: 5,
@@ -107,9 +107,11 @@ const Workspace = () => {
                         fontSize: 12,
                         cursor: "pointer"
                       }}
+
+                      href="/clients"
                     >
                       Create Tasks &rarr;{" "}
-                    </span>
+                    </a>
                   </div>
                   <div
                     style={{

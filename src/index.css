@@ -221,6 +221,7 @@ ul {
   font-weight: 600;
   font-family: "Inter";
   color: #000000;
+  margin-top: -20px;
 }
 
 .p_welcome {
@@ -285,6 +286,9 @@ ul {
   width: 35%;
 }
 
+/* hr {
+} */
+
 .client_card.C {
   width: 40%;
   height: 220px;
@@ -300,7 +304,62 @@ ul {
   text-align: left;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000
+  color: #000;
 }
 
-/*  */
+/* WORKSPACE SCREEN  */
+.workspace_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work_input {
+  border: 1px solid #efefef;
+  outline: none;
+  width: 85%;
+  padding: 12px 4px 12px 40px;
+  background: #fafafa url("./assets/images/searchIcon.png") no-repeat 13px
+    center;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 0px 1px 0px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+.work_input::placeholder {
+  font-size: 12px;
+}
+
+.work_btn {
+  border: none;
+  background: #ddaa33;
+  margin-top: -25px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.ant-pagination {
+  display: none !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  background: #fbf6eb !important;
+  font-family: "Inter";
+  border-bottom: 5px solid #ddaa33;
+}
+
+td.ant-table-cell {
+  font-family: "Inter";
+  font-size: 14px;
+}
+
+td.ant-table-cell-row-hover {
+  background: #fbf6eb !important;
+}
+
+td.ant-table-cell-row-hover:first-child {
+  border-left: 2px solid #ddaa33;
+}
