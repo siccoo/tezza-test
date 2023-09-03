@@ -190,17 +190,17 @@ ul {
   background: #fbf6eb !important;
 }
 
+/* .side-icons {
+  color: #ddaa33 !important;
+} */
+
 .side-icons {
-
-}
-
-.ant-menu-item-icon {
   width: 20px;
   color: #000000;
 }
 
-.ant-menu-item .ant-menu-item-icon:hover {
-  color: #ddaa33;
+.ant-menu-item .side-icons:hover {
+  color: #ddaa33 !important;
 }
 
 .ant-menu-root .ant-menu-item-icon:active {
@@ -217,14 +217,6 @@ ul {
 .ant-menu-title-content:hover {
   color: #ddaa33;
 }
-
-/* td.ant-table-cell-row-hover {
-  background: #fbf6eb !important;
-}
-
-td.ant-table-cell-row-hover:first-child {
-  border-left: 2px solid #ddaa33;
-} */
 
 /* TOPBAR SCREEN */
 

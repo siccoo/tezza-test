@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 import Logo from "../../assets/images/logo.png";
 
-import {GrAppsRounded, GrTask, GrScheduleNew} from "react-icons/gr";
-import {FaUsers} from "react-icons/fa";
-import {AiOutlineMessage} from "react-icons/ai";
-import {TbReportAnalytics, TbReportMoney} from "react-icons/tb";
+import { GrAppsRounded, GrTask, GrScheduleNew } from "react-icons/gr";
+import { FaUsers } from "react-icons/fa";
+import { AiOutlineMessage } from "react-icons/ai";
+import { TbReportAnalytics, TbReportMoney } from "react-icons/tb";
 
-import { Layout, Menu, } from "antd";
+import { Layout, Menu } from "antd";
 import Topbar from "../Topbar";
 
 const { Content, Sider } = Layout;
@@ -22,14 +22,16 @@ function getItem(label, key, icon, children) {
   };
 }
 
-
-
 const items = [
   getItem("Workspace", "1", <GrAppsRounded className="side-icons" />),
   getItem("Clients", "2", <FaUsers className="side-icons" />),
-  getItem("Schedule Appointment", "3", <GrScheduleNew className="side-icons" />),
+  getItem(
+    "Schedule Appointment",
+    "3",
+    <GrScheduleNew className="side-icons" />
+  ),
   getItem("Payment", "4", <TbReportMoney className="side-icons" />),
-  getItem("Task", "5", <GrTask className="side-icons" /> ),
+  getItem("Task", "5", <GrTask className="side-icons" />),
   getItem("Message", "6", <AiOutlineMessage className="side-icons" />),
   getItem("Reports", "sub2", <TbReportAnalytics className="side-icons" />, [
     getItem("Team 1", "7"),
@@ -54,12 +56,15 @@ const SidebarLayout = ({ children }) => {
         <Link to={"/"}>
           <img className="tezzaLogo" src={Logo} alt="tezzaLogo" />
         </Link>
-        <Menu
-          theme="dark"
-          defaultSelectedKeys={["1"]}
-          mode="inline"
-          items={items}
-        />
+        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
+          {items.map((item) => (
+            <Menu.Item key={item.key} icon={item.icon}>
+              <Link to={`/${item.label.toLowerCase().replace(" ", "-")}`}>
+                {item.label}
+              </Link>
+            </Menu.Item>
+          ))}
+        </Menu>
       </Sider>
       <Layout>
         <Topbar />
