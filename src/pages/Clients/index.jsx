@@ -98,6 +98,7 @@ const Clients = () => {
           marginRight: 30,
           minHeight: 550,
           background: colorBgContainer,
+          borderRadius: 5,
         }}
       >
         <div className="workspace_container">
@@ -106,9 +107,9 @@ const Clients = () => {
             placeholder="Search by name, email..."
             className="work_input"
           />
-          <button className="work_btn" type="submit">
+          <a href="/clients-profile" className="work_btn" type="submit">
             Add new Client
-          </button>
+          </a>
         </div>
         <br />
         <div>

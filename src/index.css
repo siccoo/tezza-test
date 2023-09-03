@@ -234,7 +234,7 @@ ul {
 .client_content .p-over {
   font-weight: 700;
   font-family: "Open Sans";
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -336,7 +336,7 @@ ul {
   margin-top: -25px;
   padding: 12px 20px;
   border-radius: 8px;
-  color: #fff;
+  color: #fff !important;
   font-family: "Inter";
   font-weight: 500;
 }
@@ -362,4 +362,49 @@ td.ant-table-cell-row-hover {
 
 td.ant-table-cell-row-hover:first-child {
   border-left: 2px solid #ddaa33;
+}
+
+/* CLIENTS PROFILE SCREEN */
+.p_clientsProfile {
+  color: #808080;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Inter";
+  margin-bottom: 50px;
+}
+
+.clientProfile_card p {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Inter';
+}
+
+.text_info {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Inter';
+  color: #898989;
+}
+
+.email, .personal-info {
+  margin-top: 10px;
+}
+
+.clients_data {
+  padding-bottom: 10px;
+}
+
+.clients_data span {
+    /* margin-bottom: 5px; */
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 600;
+    color: #898989;
+}
+
+.clients_data p {
+  /* margin-bottom: 5px; */
+  font-family: "Inter"; font-size: 16px;
+  font-weight: 600;
+  color: #000;
 }
