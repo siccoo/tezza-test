@@ -16,6 +16,6 @@ This page opens when the user clicks on the following buttons which are: Add but
 
 ## The Clients Profile Page
 
-This page opens when the user clicks on the Add new Client buttons..
+This page opens when the user clicks on the Add new Client button, it will take you to the route `/clients-profile`.
 
 > Visit [Tezza Fronend Test Live Project](https://tezza-test.vercel.app/)
