@@ -30,7 +30,7 @@ const Login = () => {
                 id="password"
                 placeholder="Enter your password"
               />
-              <span></span>
+              <span className="space_indicate"></span>
               <div>
                 <a href="/workspace" className="button">
                   Login

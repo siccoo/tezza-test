@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../assets/images/logo.png";
-import {
-  DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+
+import {GrAppsRounded, GrTask, GrScheduleNew} from "react-icons/gr";
+import {FaUsers} from "react-icons/fa";
+import {AiOutlineMessage} from "react-icons/ai";
+import {TbReportAnalytics, TbReportMoney} from "react-icons/tb";
+
 import { Layout, Menu, } from "antd";
 import Topbar from "../Topbar";
 
@@ -23,19 +22,19 @@ function getItem(label, key, icon, children) {
   };
 }
 
+
+
 const items = [
-  getItem("Option 1", "1", <PieChartOutlined />),
-  getItem("Option 2", "2", <DesktopOutlined />),
-  getItem("User", "sub1", <UserOutlined />, [
-    getItem("Tom", "3"),
-    getItem("Bill", "4"),
-    getItem("Alex", "5"),
-  ]),
-  getItem("Team", "sub2", <TeamOutlined />, [
-    getItem("Team 1", "6"),
+  getItem("Workspace", "1", <GrAppsRounded className="side-icons" />),
+  getItem("Clients", "2", <FaUsers className="side-icons" />),
+  getItem("Schedule Appointment", "3", <GrScheduleNew className="side-icons" />),
+  getItem("Payment", "4", <TbReportMoney className="side-icons" />),
+  getItem("Task", "5", <GrTask className="side-icons" /> ),
+  getItem("Message", "6", <AiOutlineMessage className="side-icons" />),
+  getItem("Reports", "sub2", <TbReportAnalytics className="side-icons" />, [
+    getItem("Team 1", "7"),
     getItem("Team 2", "8"),
   ]),
-  getItem("Files", "9", <FileOutlined />),
 ];
 
 const SidebarLayout = ({ children }) => {

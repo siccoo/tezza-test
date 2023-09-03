@@ -84,7 +84,7 @@ input {
   border: 1px solid #000;
 }
 
-span {
+.space_indicate {
   margin-bottom: 25px;
 }
 
@@ -113,10 +113,24 @@ ul {
   background: #fff !important;
 }
 
+.ant-layout-sider {
+  flex: 0 0 200px;
+  max-width: 200px;
+  min-width: 200px !important;
+  width: 200px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
 .ant-menu-item,
 .ant-menu-submenu {
   color: #000000;
   font-family: "Inter" !important;
+}
+
+.ant-menu-item-active {
+  color: #ddaa33;
 }
 
 .ant-layout-sider-collapsed .tezzaLogo {
@@ -124,9 +138,21 @@ ul {
 }
 
 .ant-layout-sider-children .tezzaLogo {
-  width: 90px;
-  margin: 40px 40px 10px 40px;
+  width: 80px;
+  margin: 40px 40px 10px 55px;
   cursor: "pointer";
+}
+
+.ant-layout-sider-trigger {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 18px;
+  color: #fff;
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -135,6 +161,70 @@ ul {
     margin-left: 20px;
   }
 }
+
+.ant-menu .ant-menu-item {
+  /* margin-bottom: 5px; */
+  margin-bottom: 10px;
+  padding-left: 7px !important;
+}
+
+.ant-menu-item:hover {
+  background: #fbf6eb !important;
+}
+
+.ant-menu-item-selected {
+  color: #ddaa33;
+  background: #fbf6eb !important;
+  border-left: 2px solid #ddaa33;
+  border-radius: 1px;
+  padding-left: 7px !important;
+}
+
+.ant-menu .ant-menu-submenu-title {
+  /* margin-bottom: 5px; */
+  margin-bottom: 10px;
+  padding-left: 7px !important;
+}
+
+.ant-menu-submenu:hover {
+  background: #fbf6eb !important;
+}
+
+.side-icons {
+
+}
+
+.ant-menu-item-icon {
+  width: 20px;
+  color: #000000;
+}
+
+.ant-menu-item .ant-menu-item-icon:hover {
+  color: #ddaa33;
+}
+
+.ant-menu-root .ant-menu-item-icon:active {
+  color: #ddaa33;
+}
+
+.ant-menu-title-content {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Inter";
+  color: #000000;
+}
+
+.ant-menu-title-content:hover {
+  color: #ddaa33;
+}
+
+/* td.ant-table-cell-row-hover {
+  background: #fbf6eb !important;
+}
+
+td.ant-table-cell-row-hover:first-child {
+  border-left: 2px solid #ddaa33;
+} */
 
 /* TOPBAR SCREEN */
 
@@ -376,17 +466,18 @@ td.ant-table-cell-row-hover:first-child {
 .clientProfile_card p {
   font-weight: 500;
   font-size: 14px;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .text_info {
   font-weight: 500;
   font-size: 14px;
-  font-family: 'Inter';
+  font-family: "Inter";
   color: #898989;
 }
 
-.email, .personal-info {
+.email,
+.personal-info {
   margin-top: 10px;
 }
 
@@ -395,16 +486,17 @@ td.ant-table-cell-row-hover:first-child {
 }
 
 .clients_data span {
-    /* margin-bottom: 5px; */
-    font-size: 14px;
-    font-family: "Inter";
-    font-weight: 600;
-    color: #898989;
+  /* margin-bottom: 5px; */
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #898989;
 }
 
 .clients_data p {
   /* margin-bottom: 5px; */
-  font-family: "Inter"; font-size: 16px;
+  font-family: "Inter";
+  font-size: 16px;
   font-weight: 600;
   color: #000;
 }
