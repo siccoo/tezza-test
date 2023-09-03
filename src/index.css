@@ -408,3 +408,15 @@ td.ant-table-cell-row-hover:first-child {
   font-weight: 600;
   color: #000;
 }
+
+.profile_btn {
+  float: right;
+  border: none;
+  background: #ddaa33;
+  margin-top: -25px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  color: #fff !important;
+  font-family: "Inter";
+  font-weight: 500;
+}
