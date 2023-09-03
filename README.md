@@ -18,4 +18,4 @@ This page opens when the user clicks on the following buttons which are: Add but
 
 This page opens when the user clicks on the Add new Client buttons..
 
-> Visit [Tezza Fronend Test Live Project](https://chocolate-city-stars.vercel.app/)
+> Visit [Tezza Fronend Test Live Project](https://tezza-test.vercel.app/)
