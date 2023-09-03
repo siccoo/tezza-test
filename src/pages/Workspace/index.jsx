@@ -42,7 +42,7 @@ const Workspace = () => {
                   >
                     <p className="p-today">Today's Agenda</p>
                   </div>
-                  <p>
+                  <p className="w-today">
                     You don't have any schedule today.{" "}
                     <a href="/clients" className="add">
                       Add
@@ -51,7 +51,7 @@ const Workspace = () => {
                 </div>
               </div>
               <div className="client_card B">
-              <div className="span A"></div>
+                <div className="span A"></div>
                 <div className="span B">
                   <div
                     style={{
@@ -64,23 +64,30 @@ const Workspace = () => {
                   >
                     <p className="p-today">Activity Report</p>
                     <a
-                    href="/clients"
+                      href="/clients"
                       style={{
                         alignItems: "center",
                         marginBottom: 5,
                         color: "#ddaa33",
                         fontSize: 12,
-                        cursor: "pointer"
+                        cursor: "pointer",
                       }}
                     >
                       View full activity report &rarr;{" "}
                     </a>
                   </div>
-                  <div className="workspace" style={{display: "flex", }}>
-                  
-                  <p><hr /> {" "} Tuesday (18th Sept 2019</p>
+                  <div
+                    className="workspace"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <hr width="50%" size="3" className="hr"/>
+                    <p className="w-days"> Tuesday (18th Sept 2019</p>
                   </div>
-                 
+                  <div className="workspace-report" >
+                    <p className="w-client">You added a new client</p>
+                    <p className="w-name">Odusote Mayokun</p>
+                    <span className="w-span">Status: Pending</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -105,9 +112,8 @@ const Workspace = () => {
                         marginBottom: 5,
                         color: "#ddaa33",
                         fontSize: 12,
-                        cursor: "pointer"
+                        cursor: "pointer",
                       }}
-
                       href="/clients"
                     >
                       Create Tasks &rarr;{" "}

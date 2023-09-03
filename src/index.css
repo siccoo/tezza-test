@@ -364,12 +364,42 @@ ul {
 
 .client_card.B {
   margin-left: 100px;
-  height: 150px;
+  height: 200px;
   width: 35%;
 }
 
-/* hr {
-} */
+.workspace .w-days{
+  font-size: normal !important;
+  font-size: 12px;
+  margin-right: 15px;
+  font-family: 'Inter';
+}
+
+.workspace .hr {
+  margin-left: 15px;
+}
+
+.workspace-report {
+  margin-top: -20px;
+}
+
+.workspace-report, .w-client, .w-name, .w-span {
+  text-align: left !important;
+  margin-left: 7px;
+  font-size: 12px;
+  font-family: 'Inter';
+}
+
+ .w-name {
+  color: #ddaa33 !important;
+}
+
+.w-span {
+  border-radius: 1px;
+  padding: 7px;
+  background: #fbf6eb !important;
+  border-left: 2px solid #ddaa33;
+}
 
 .client_card.C {
   width: 40%;
