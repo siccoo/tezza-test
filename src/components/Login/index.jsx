@@ -22,6 +22,7 @@ const Login = () => {
                 type="text"
                 id="username"
                 placeholder="Enter your username"
+                required
               />
 
               <label for="password">Password</label>
@@ -29,6 +30,7 @@ const Login = () => {
                 type="password"
                 id="password"
                 placeholder="Enter your password"
+                required
               />
               <span className="space_indicate"></span>
               <div>
